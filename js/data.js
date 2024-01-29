@@ -1,9 +1,8 @@
 const data = [
     {
         product_id: 'portfolioModal1',
-        product_name: 'Collection Mùa Xuân',
+        product_name: 'Spring Collection',
         product_price: 'Liên hệ',
-        product_size: 'A, B, C',
         product_image: [
             './assets/Tet/1.png',
             './assets/Tet/2.png',
@@ -13,26 +12,26 @@ const data = [
     },
     {
         product_id: 'portfolioModal2',
-        product_name: 'Collection Mùa Hạ',
+        product_name: 'Christmas Collection',
         product_price: 'Liên hệ',
-        product_size: 'A, B, C',
         product_image: [
-            './assets/Tet/1.png',
-            './assets/Tet/2.png',
-            './assets/Tet/3.png',
-            './assets/Tet/4.png'
+            './assets/Christmas/1.png',
+            './assets/Christmas/2.png',
+            './assets/Christmas/3.png'
+       
         ]
     },
     {
         product_id: 'portfolioModal3',
-        product_name: 'Collection Mùa Thu',
+        product_name: 'Summer Collection',
         product_price: 'Liên hệ',
-        product_size: 'AA, A, B, C',
         product_image: [
-            './assets/Tet/1.png',
-            './assets/Tet/2.png',
-            './assets/Tet/3.png',
-            './assets/Tet/4.png'
+            './assets/Summer/1.png',
+            './assets/Summer/2.png',
+            './assets/Summer/3.png',
+            './assets/Summer/4.png',
+            './assets/Summer/5.png'
+          
         ]
     }
 
@@ -63,7 +62,7 @@ data.forEach(p => {
     const element = document.getElementById(p.product_id)
     const images = p.product_image.map(image => `<img class="img-fluid d-block mx-auto" src="${image}" style="width:400px; height:auto;" alt="..." />`);
     element.innerHTML = `
-    <div class="modal-dialog text-center" style="width:1000px; margin:0 auto;">
+    <div class="modal-dialog text-center" style="width:1100px; margin:0 auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -76,9 +75,7 @@ data.forEach(p => {
                                         <li>
                                             <strong>Giá sản phẩm: </strong><span style="color: red;">${p.product_price}</span>
                                         </li>
-                                        <li>
-                                            <strong>Size sản phẩm: </strong> <span style="color: red;">${p.product_size}</span>
-                                        </li>
+                                     
                                     </ul>
                                     ${images.join('')}
 
