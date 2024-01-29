@@ -5,11 +5,10 @@ const data = [
         product_price: 'Liên hệ',
         product_size: 'A, B, C',
         product_image: [
-            'https://product.hstatic.net/1000136076/product/_mgl5166_a43cd1467e914f43af84d018fdca4efe_master.png',
-            'https://product.hstatic.net/1000136076/product/_mgl5196_5efea53e3ee34dce9a0333af5a422554_1024x1024.png',
-            'https://product.hstatic.net/1000136076/product/_mgl5166_a43cd1467e914f43af84d018fdca4efe_1024x1024.png',
-            'https://product.hstatic.net/1000136076/product/img_8538_5d2d670aa210496ca4c592a07fb26a2c_1024x1024.png',
-            'https://file.hstatic.net/1000136076/file/adtt72_fe24cf4128b34ad284dcf5bb7bc40638.jpg'
+            '../assets/Tet/1.png',
+            '../assets/Tet/2.png',
+            '../assets/Tet/3.png',
+            '../assets/Tet/4.png'
         ]
     },
     {
@@ -18,11 +17,10 @@ const data = [
         product_price: 'Liên hệ',
         product_size: 'A, B, C',
         product_image: [
-            'https://product.hstatic.net/1000136076/product/11_4048d83e8b2940b48ff41c5ad0767a08_master.png',
-            'https://product.hstatic.net/1000136076/product/_mgl0884_b549f1f34a5f414688b0221e3c8ff973_master.jpeg',
-            'https://product.hstatic.net/1000136076/product/_mgl0873_65dea55452ec4575b19e609eff3dcd22_master.jpeg',
-            'https://product.hstatic.net/1000136076/product/_mgl0877_b87c74e4fc6f4842b0f1789f9b085b57_master.jpeg',
-            'https://file.hstatic.net/1000136076/file/adtt72_fe24cf4128b34ad284dcf5bb7bc40638.jpg'
+            '../assets/Tet/1.png',
+            '../assets/Tet/2.png',
+            '../assets/Tet/3.png',
+            '../assets/Tet/4.png'
         ]
     },
     {
@@ -31,12 +29,10 @@ const data = [
         product_price: 'Liên hệ',
         product_size: 'AA, A, B, C',
         product_image: [
-            'https://file.hstatic.net/1000136076/file/img_5095_28b419fd90dc4156a6b5b727439f3614.png',
-            'https://file.hstatic.net/1000136076/file/img_5081_37d213ab5f78446585f24cdd8f199971.png',
-            'https://file.hstatic.net/1000136076/file/img_5134_e282e6125f4d4b739a408e3ccc67198b.png',
-            'https://file.hstatic.net/1000136076/file/img_5140_e954dd467ad34767bbb63fe7231fbe44.png',
-            'https://file.hstatic.net/1000136076/file/img_5171_336fd6944bd744f0a9239c8cb1fa9d9d.png',
-            'https://file.hstatic.net/1000136076/file/adtt72_fe24cf4128b34ad284dcf5bb7bc40638.jpg'
+            '../assets/Tet/1.png',
+            '../assets/Tet/2.png',
+            '../assets/Tet/3.png',
+            '../assets/Tet/4.png'
         ]
     }
 
@@ -65,9 +61,9 @@ data.forEach(p => {
 
 
     const element = document.getElementById(p.product_id)
-    const images = p.product_image.map(image => `<img class="img-fluid d-block mx-auto" src="${image}" alt="..." />`);
+    const images = p.product_image.map(image => `<img class="img-fluid d-block mx-auto" src="${image}" style="width:400px; height:auto;" alt="..." />`);
     element.innerHTML = `
-    <div class="modal-dialog">
+    <div class="modal-dialog text-center" style="width:1000px; margin:0 auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
