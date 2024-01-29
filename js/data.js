@@ -5,10 +5,10 @@ const data = [
         product_price: 'Liên hệ',
         product_size: 'A, B, C',
         product_image: [
-            '../assets/Tet/1.png',
-            '../assets/Tet/2.png',
-            '../assets/Tet/3.png',
-            '../assets/Tet/4.png'
+            './assets/Tet/1.png',
+            './assets/Tet/2.png',
+            './assets/Tet/3.png',
+            './assets/Tet/4.png'
         ]
     },
     {
@@ -17,10 +17,10 @@ const data = [
         product_price: 'Liên hệ',
         product_size: 'A, B, C',
         product_image: [
-            '../assets/Tet/1.png',
-            '../assets/Tet/2.png',
-            '../assets/Tet/3.png',
-            '../assets/Tet/4.png'
+            './assets/Tet/1.png',
+            './assets/Tet/2.png',
+            './assets/Tet/3.png',
+            './assets/Tet/4.png'
         ]
     },
     {
@@ -29,10 +29,10 @@ const data = [
         product_price: 'Liên hệ',
         product_size: 'AA, A, B, C',
         product_image: [
-            '../assets/Tet/1.png',
-            '../assets/Tet/2.png',
-            '../assets/Tet/3.png',
-            '../assets/Tet/4.png'
+            './assets/Tet/1.png',
+            './assets/Tet/2.png',
+            './assets/Tet/3.png',
+            './assets/Tet/4.png'
         ]
     }
 
